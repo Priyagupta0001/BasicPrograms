@@ -1,23 +1,8 @@
-def join_arrays(arr1, arr2)
-  combined_array = []
+array1 = [1, 2, 3]
+array2 = [4, 5, 6]
 
-  # Add elements from the first array
-  for element in arr1
-    combined_array << element
-  end
+#using array method
+array1.concat(array2)
 
-  # Add elements from the second array
-  for element in arr2
-    combined_array << element
-  end
+puts array1.inspect
 
-  combined_array
-end
-
-
-arr1 = [1, 2, 3]
-arr2 = [4, 5, 6]
-result = join_arrays(arr1, arr2)
-
-# Print the combined array
-puts result.inspect
